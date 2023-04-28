@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MEU-SITE</title>
     <link rel="stylesheet" href="./css/estilo.css" />
+
+    <script src="./js/script.js"></script>
   </head>
 
   <body>
@@ -19,6 +21,37 @@
     </header>
 
     <h2 class="tit-sec">Seçao de Fotos</h2>
+
+    <!-- <button onclick="alert(innerText)">Olá Mundo!</button> -->
+
+    <script>
+
+      var nr1 = 10;
+      var nr2 = 5;
+
+      // console.log("Imprimir texto");
+
+      // console.log(nr1+nr2);
+      // console.log(nr1-nr2);
+      // console.log(nr1*nr2);
+      // console.log(nr1/nr2);
+
+
+      // //Concatenacao
+      // console.log("Resultado :" + (nr1+nr2));
+      // console.log("Resultado Interpolado:" + ${nr1+nr2});
+
+      // console.log("Resultado :" + (nr1-nr2));
+      // console.log("Resultado Interpolado:" + ${nr1-nr2});
+
+      // console.log("Resultado :" + (nr1*nr2));
+      // console.log("Resultado Interpolado:" + ${nr1*nr2});
+
+      //console.log("Resultado: " + (nr1/nr2));
+      //console.log(`Resultado Interpolado: ${nr1/nr2}`);
+      
+
+    </script>
 
     <section class="conteudo">
       <div>
@@ -46,6 +79,39 @@
         <p>Legenda</p>
       </div>
     </section>
+
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Espécies</th>
+        <th>Habitat</th>
+        <th>Pelagem</th>
+        <th>Incidência</th>
+      </tr>
+      <tr>
+        <!-- Ex de mesclagem -->
+        <td colspan="2">Lupos Canides</td>
+        <td>Canídeos</td>
+        <td>Floresta</td>
+        <td>Cinzenta</td>
+        <td>Américas /Europa/ Ásia</td>
+      </tr>
+      <tr>
+        <!-- <td>Chrysocyon brachyurus</td> -->
+        <td>Canídeos</td>
+        <td>Mata Pampas</td>
+        <td>Marrom</td>
+        <td>América do Sul</td>
+      </tr>
+      <tr>
+        <!-- Ex de mesclagem -->
+        <td rowspan="2">Lupos Canides</td>
+        <td>Canídeos</td>
+        <td>Floresta</td>
+        <td>Cinzenta</td>
+        <td>Américas /Europa/ Ásia</td>
+      </tr>
+    </table>
 
     <footer class="rodape">
       <h2>Fale Conosco</h2>
