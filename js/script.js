@@ -48,3 +48,11 @@ btn.addEventListener("click", function(){
     //com interpolacao
     this.setAttribute("style",`background-color:rgb(${r},${g},${b});`);
 });
+
+/* <h2 class="tit-sec">Seçao de Fotos</h2> */
+//pegar um elemento pela classe/id se for unico
+const h2Element = document.querySelector(".tit-sec");
+//exibe o obj inteiro
+console.log(h2Element);
+
+//querySelectorAll()
