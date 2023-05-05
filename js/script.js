@@ -58,28 +58,28 @@
 //querySelectorAll()
 
 //Declaração de um ARRAY e seus métodos!
-let frutas = ["banana","maçã","laranja","morango","uva","amora","cereja","abacaxi"];
-//Imprimindo um array
-console.log(frutas)
-console.log(frutas[7])
-//Verificar tamanho do array através da propriedade length
-console.log(`O tamanho do Array é : ${frutas.length}`);
+// let frutas = ["banana","maçã","laranja","morango","uva","amora","cereja","abacaxi"];
+// //Imprimindo um array
+// console.log(frutas)
+// console.log(frutas[7])
+// //Verificar tamanho do array através da propriedade length
+// console.log(`O tamanho do Array é : ${frutas.length}`);
 
-//Inserir item ao final do array com o método push(nomeItem);
-frutas.push("pêssego");
-console.log(frutas)
+// //Inserir item ao final do array com o método push(nomeItem);
+// frutas.push("pêssego");
+// console.log(frutas)
 
-//Inserir item no inicio do array com o método push(nomeItem);
-frutas.unshift("kiwi");
-console.log(frutas);
+// //Inserir item no inicio do array com o método push(nomeItem);
+// frutas.unshift("kiwi");
+// console.log(frutas);
 
-//Removendo um item ao final do array com o método push(nomeItem);
-frutas.pop();
-console.log(frutas);
+// //Removendo um item ao final do array com o método push(nomeItem);
+// frutas.pop();
+// console.log(frutas);
 
-//Removendo um item no inicio do array com o método push(nomeItem);
-frutas.shift();
-console.log(frutas);
+// //Removendo um item no inicio do array com o método push(nomeItem);
+// frutas.shift();
+// console.log(frutas);
 
 //Localizando um item no array com o método indexOf(nomeItem);
 //Obs: O método indexOf(nomeItem) retorna o indice do item.
@@ -119,16 +119,41 @@ console.log(frutas);
 //     })
 // });
 
+// let nr1 = [1,2,3,4,5];
+// let nr2 = [6,7,8,9,10];
+// console.log("ARRAY 1 : " + nr1);
+// console.log("ARRAY 2 : " + nr2);
+// //Concatenando arrays em um novo array com operador SPREAD( ... );
+// //Numeros soltos dentro do array
+// let nr3 = [...nr1,...nr2];
+// console.log("NOVO ARRAY : " + nr3);
+// //Imprimindo o novo array com forEach
+// nr3.forEach((nr)=>{
+//     console.log("ITENS DO NOVO ARRAY : " + nr);
+// });
 
-let nr1 = [1,2,3,4,5];
-let nr2 = [6,7,8,9,10];
-console.log("ARRAY 1 : " + nr1);
-console.log("ARRAY 2 : " + nr2);
-//Concatenando arrays em um novo array com operador SPREAD( ... );
-//Numeros soltos dentro do array
-let nr3 = [...nr1,...nr2];
-console.log("NOVO ARRAY : " + nr3);
-//Imprimindo o novo array com forEach
-nr3.forEach((nr)=>{
-    console.log("ITENS DO NOVO ARRAY : " + nr);
+//converter elemento para array
+//opcao1
+// const imgElements = [...document.getElementsByTagName("img")];
+// // exemplo de for
+// // for (let index = 0; index < imgElements.length; index++) {
+// //     console.log(imgElements[index].src);
+// // }
+// //opcao2
+// //const imgElementsArray = [...imgElements];
+
+// imgElements.forEach((img)=>{
+//     img.setAttribute("width","10%");
+// });
+
+//query pegar o elemento que vc quiser e ja tem forEach incluso
+const elements = [...document.querySelectorAll(".teste")];
+// console.log(elements);
+
+elements.forEach( (el)=>{
+    if(el.tagName.toLowerCase() == "img"){
+        console.log(el);
+    }
 });
+
+
