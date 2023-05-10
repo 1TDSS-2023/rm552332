@@ -25,7 +25,7 @@ function adicionarTexto(){
 
 function mudarImg() {
 
-  var imgs = document.querySelector("#imgs")
+  const imgs = document.querySelector("#imgs")
   if (imgs.src.endsWith("tranquilidade.jpg")) {
   imgs.src = "./img/desespero.jpg";
   imgs.alt = "Imagem Desespero";
@@ -34,4 +34,17 @@ function mudarImg() {
   imgs.src = "./img/tranquilidade.jpg";
   imgs.alt = "Imagem Tranquilidade";
   } 
+}
+
+function exibirText() {
+
+  const exibeText = document.querySelector("#exibe");
+  exibeText.textContent = "Aeee!! Fui exibido ;p"
+  
+  }
+
+function esconderText() {
+  
+  const escondeText = document.querySelector("#esconde");
+  escondeText.classList.add("esconder");
 }

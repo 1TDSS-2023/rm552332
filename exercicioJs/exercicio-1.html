@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercicios 1 - js</title>
     <script src="./js/exercicio.js" defer></script>
+    <style>
+    .esconder{
+      display: none;
+    } 
+    </style>
   </head>
 
   <body>
@@ -37,12 +42,14 @@
       <div>
         <h3>Exercício 4</h3>
         <p>Crie um botão e um elemento qualquer html, quando o botão é clicado, exibe uma mensagem neste elemento html na página .</p>
-        <button value="click" id="meu-btn">Click</button>
+        <button onclick="exibirText()">Exibir texto</button>
+        <p id="exibe"></p>
       </div>
       <div>
         <h3>Exercício 5</h3>
         <p>Crie um botão que, quando clicado, oculta um elemento HTML.</p>
-        <button value="click" id="meu-btn">Click</button>
+        <button onclick="esconderText()">Esconder texto</button>
+        <p id="esconde">Me esconde, por favor!!! :(</p>
       </div>
     </section>
 
